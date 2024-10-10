@@ -1,3 +1,4 @@
 #Ignoring files
 listings.txt
 .env
+.daft-env
