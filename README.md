@@ -23,6 +23,6 @@ pip install -r requirements.txt
 ```
 Then copy and edit config file:
 ```bash
-cp .env-example .env
-nano .env
+cp .daft-env-example .daft-env
+nano .daft-env
 ```
