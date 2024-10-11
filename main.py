@@ -135,6 +135,7 @@ def search():
                 print(link)
                 if link not in new_links:
                     new_links.append(link)
+                    saved_listings.append(int(listing_dict['id']))
                     #Sending telegram message
                     message = listing_dict['title'] + '\n' + listing_dict['price'] + ' ' + listing_dict['numBedrooms'] + '\n' + link
                     if data['user_data']['apply'] and int(data['user_data']['num_beds_to_apply']) == int(item['min_beds']):
