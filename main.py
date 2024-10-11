@@ -99,7 +99,9 @@ def search():
         #f.seek(0)
         for line in f.readlines():
             line_parts = line.strip().split("/")
-            saved_listings.append(int(line_parts[-1]))
+            listing_id = line_parts[-1]
+            if len(listing_id) > 0:
+                saved_listings.append(int(listing_id))
         #print(saved_listings)
 
 
